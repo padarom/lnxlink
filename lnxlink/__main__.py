@@ -472,7 +472,7 @@ def main():
         parser.print_help()
         parser.exit("\nSomething went wrong, --config condition was not set")
     config_path = os.path.abspath(args.config)
-    files_setup.setup_logger(config_path, args.logging)
+    files_setup.setup_logger(os.getcwd(), args.logging)
     config_setup.setup_config(config_path)
     if args.setup:
         logger.info("The configuration exists under the file: %s", config_path)
