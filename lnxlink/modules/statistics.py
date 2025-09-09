@@ -44,8 +44,7 @@ class Addon:
 
     def _get_uuid(self):
         """Creates a Unique ID once to send it to the analyzer server"""
-        config_dir = os.path.dirname(os.path.realpath(self.lnxlink.config_path))
-        uuid_file = os.path.join(config_dir, "lnxlink_uuid.txt")
+        uuid_file = os.path.join(os.getcwd(), "lnxlink_uuid.txt")
         if os.path.exists(uuid_file):
             with open(uuid_file, encoding="UTF-8") as file:
                 return file.read()
