@@ -1,3 +1,6 @@
+### Notes regarding this fork
+This fork contains some changes that make it work better with NixOS (or rather, work at all). See my [NixOS module](https://github.com/padarom/elements/blob/main/modules/nixos/services/lnxlink.nix) and [LNXlink config](https://github.com/padarom/elements/blob/main/modules/nixos/services/lnxlink.yaml) for some reference. Note that some modules don't work on NixOS at all, as paths to binaries are hard-coded to places where they don't exist on Nix.
+
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE.md)
 [![OS - Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white)]()
 [![Python 3.7](https://img.shields.io/badge/Python-3.7-blue?logo=python&logoColor=white)]()
